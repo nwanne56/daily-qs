@@ -1,0 +1,81 @@
+html, body {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+
+    text-align: center;
+
+}
+
+.question {
+    width: 50%;
+}
+
+#top {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+#bottom {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+
+    opacity: 0;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+
+
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translate(0, -5vh); }
+    100% { opacity: 1; }
+}
+  
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(-5%, 0); }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(-5%, 0); }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(-5%, 0); }
+    100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    0% { opacity: 0; transform: translate(-5%, 0); }
+    100% { opacity: 1; }
+}
+
+@font-face {
+    font-family: GreatDay;
+    src: url('fonts/GreatDay-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: GreatDay;
+    src: url('fonts/GreatDay-Bold.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
