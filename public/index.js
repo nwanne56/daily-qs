@@ -24,8 +24,10 @@ async function getQuestion(db) {
 }
 
 function setupInput(question) {
+    var input = document.getElementById("answer");
+
     var data = {
-        text: 'Los Angeles',
+        text: input.value,
         qid: question.id
     };
     const responseCol = collection(db, 'responses');
@@ -39,9 +41,8 @@ function setupInput(question) {
 
     var topd = document.getElementById("top");
     var botd = document.getElementById("bottom");
-    var input = document.getElementById("answer");
 
-    topd.style.animation = "fadeOut 2s";
+    topd.style.animation = "fadeOut 2s";    
     topd.style.opacity = 0;
     botd.style.animation = "fadeOut 2s";
     input.style.animation = "fadeOut 5s";
@@ -59,7 +60,7 @@ function setupInput(question) {
         };
     }, 2000);
 
-    
+
     
 }
 
