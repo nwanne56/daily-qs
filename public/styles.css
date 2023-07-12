@@ -19,6 +19,8 @@ body {
 }
 
 #answer {
+    -webkit-appearance: none;
+    
     font-family: monospace;
 
     display: block;
