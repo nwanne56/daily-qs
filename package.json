@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "firebase": "^10.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "name": "dailyqs",
+  "version": "1.0.0",
+  "description": "cqs",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwanne56/daily-qs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwanne56/daily-qs/issues"
+  },
+  "homepage": "https://github.com/nwanne56/daily-qs#readme"
+}
